@@ -1,0 +1,11 @@
+name: CI
+
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello from the CI workflow in hezi-ci-lab!"
